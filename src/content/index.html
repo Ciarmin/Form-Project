@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Site title</title>
+    <meta name="description" content="Description" />
+
+    <!-- Title -->
+   <meta property="og:title" content="Ciarmin Project" />
+   <!-- OPTIONAL description. 2-4 sentences. -->
+   <meta property="og:description" content="Jest to projekt stworzony przez Ciarmina" />
+   <!-- full url with http(s) ie. https://ciarmin.github.io/myrepo/ -->
+   <meta property="og:url" content="https://ciarmin.github.io/PWA-hydroapp/" />
+   <!-- full url to the image with http(s) ie. https://ciarmin.github.io/PWA-hydroapp/assets/img/cover.png. Facebook suggests at least 1200 x 630. -->
+   <meta property="og:image" content="https://ciarmin.github.io/PWA-hydroapp/assets/img/cover.png" />
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="assets/pwa/icons/icon-192x192.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/pwa/icons/icon-192x192.png"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+          <h1 class="header__heading">Formularz Konaktowy</h1>
+      </header>
+      <section class="container">
+          <h2 class="container__header">Twój formularz zgłoszeniowy</h2>
+          <div class="form__section">
+              <form action="http://dev.cotenfrontend.pl" method="POST" class="form">
+                  <div class="form__field">
+                      <label for="name">wpisz swoje imię</label>
+                      <input type="text" name="name" id="name" required>
+                  </div>
+
+                  <div class="form__field">
+                          <label for="riddle">wpisz cotenfrontend</label>
+                          <input type="text" name="riddle" id="riddle" required>
+                      </div>
+
+                      <div class="form__field">
+
+                              <input type="submit"  value="send">
+                          </div>
+              </form>
+          </div>
+
+      </section>
+  </main>
+
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
